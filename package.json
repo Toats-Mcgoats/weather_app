@@ -1,0 +1,22 @@
+{
+  "name": "weather_app",
+  "version": "1.0.0",
+  "description": "simple weather app to display both current and 7 day forecast based on user input",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Toats-Mcgoats/weather_app.git"
+  },
+  "author": "David Rosenberger",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Toats-Mcgoats/weather_app/issues"
+  },
+  "homepage": "https://github.com/Toats-Mcgoats/weather_app#readme",
+  "dependencies": {
+    "bulma": "^0.7.5"
+  }
+}
