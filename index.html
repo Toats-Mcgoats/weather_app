@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Your Weather</title>
+    <link rel="stylesheet" href="/node_modules/bulma/css/bulma.min.css">
+    <link rel="stylesheet" href="/stylesheet/style.css">
+</head>
+<body>
+    <main class="container is-mobile">
+
+        <section class="section columns">
+            <div class="column field is-4 is-offset-4">
+                <div class="control">
+                    <input class="input" type="text" placeholder="Enter City">
+                </div>
+            </div>
+        </section>
+        
+        <section class="section is-paddingless container">
+            <div class="current-forecast has-text-centered">
+                <h1 class="is-size-2">City, State</h1>
+                <canvas id="icon1" width="128" height="128"></canvas>
+                <p class="section">description</p>
+                <span class="is-size-1">00 &deg; F</span>
+            </div>
+        </section>
+        
+        <section class="section container forecast">
+            <div class="columns is-mobile has-text-centered">
+                <div class="day column">
+                    <h3>Monday</h3>
+                    <hr>
+                    <canvas id="icon1" width="64" height="64"></canvas>
+                    <div>description</div>
+                    <div>00 &deg; F</div>
+                </div>
+                <div class="day column">
+                    <h3>Tuesday</h3>
+                    <hr>
+                    <canvas id="icon1" width="64" height="64"></canvas>
+                    <div>description</div>
+                    <div>00 &deg; F</div>
+                </div>
+                <div class="day column">
+                    <h3>Wednsday</h3>
+                    <hr>
+                    <canvas id="icon1" width="64" height="64"></canvas>
+                    <div>description</div>
+                    <div>00 &deg; F</div>
+                </div>
+                <div class="day column">
+                    <h3>Thursday</h3>
+                    <hr>
+                    <canvas id="icon1" width="64" height="64"></canvas>
+                    <div>description</div>
+                    <div>00 &deg; F</div>
+                </div>
+                <div class="day column">
+                    <h3>Friday</h3>
+                    <hr>
+                    <canvas id="icon1" width="64" height="64"></canvas>
+                    <div>description</div>
+                    <div>00 &deg; F</div>
+                </div>
+                <div class="day column">
+                    <h3>Saturday</h3>
+                    <hr>
+                    <canvas id="icon1" width="64" height="64"></canvas>
+                    <div>description</div>
+                    <div>00 &deg; F</div>
+                </div>
+                <div class="day column">
+                    <h3>Sunday</h3>
+                    <hr>
+                    <canvas id="icon1" width="64" height="64"></canvas>
+                    <div>description</div>
+                    <div>00 &deg; F</div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="has-text-centered">
+        <div class="content"> 
+            <a href="https://bulma.io">
+                <img src="/images/footer-logo.png" alt="Made with Bulma" width="192" height="36">
+            </a>
+        </div>
+    </footer>
+    <script src="/javascript/lib/skycons.js"></script>
+    <script src="/javascript/app.js"></script>
+</body>
+</html>
