@@ -1,5 +1,6 @@
 var express = require('express');
 var app = express();
+var request = require('request');
 
 app.use(express.static('public'));
 app.set('view engine', 'ejs');
@@ -8,6 +9,13 @@ app.set('view engine', 'ejs');
 app.get('/', (req, res) => {
 res.render('index');
 });
+
+request('https://api.darksky.net/forecast/8ffd27d6e91e3d54d3477bb7f711387a/37.8267,-122.4233', (error, response, body) => {
+    if(!error && response.statusCode == 200) {
+        console.log(body);
+    }
+});
+
 
 
 
