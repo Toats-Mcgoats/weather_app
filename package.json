@@ -17,6 +17,10 @@
   },
   "homepage": "https://github.com/Toats-Mcgoats/weather_app#readme",
   "dependencies": {
-    "bulma": "^0.7.5"
+    "bulma": "^0.7.5",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
   }
 }
