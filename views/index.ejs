@@ -21,10 +21,10 @@
         
         <section class="section is-paddingless container">
             <div class="current-forecast has-text-centered">
-                <h1 class="is-size-2">City, State</h1>
+                <h1 class="is-size-2"><%= data['timezone'] %></h1>
                 <canvas id="icon1" width="128" height="128"></canvas>
-                <p class="section">description</p>
-                <span class="is-size-1">00 &deg; F</span>
+                <p class="section is-size-5"><%= data['currently']['summary'] %></p>
+                <span class="is-size-1"><%= Math.round(data['currently']['temperature']) %> &deg; F</span>
             </div>
         </section>
         
@@ -34,50 +34,50 @@
                     <h3>Monday</h3>
                     <hr>
                     <canvas id="icon1" width="64" height="64"></canvas>
-                    <div>description</div>
-                    <div>00 &deg; F</div>
+                    <div><%= data['daily']['data'][3]['summary'] %></div>
+                    <div><%= Math.round(data['daily']['data'][3]['temperatureHigh']) %> &deg; F</div>
                 </div>
                 <div class="day column">
                     <h3>Tuesday</h3>
                     <hr>
                     <canvas id="icon1" width="64" height="64"></canvas>
-                    <div>description</div>
-                    <div>00 &deg; F</div>
+                    <div><%= data['daily']['data'][4]['summary'] %></div>
+                    <div><%= Math.round(data['daily']['data'][4]['temperatureHigh']) %> &deg; F</div>
                 </div>
                 <div class="day column">
                     <h3>Wednsday</h3>
                     <hr>
                     <canvas id="icon1" width="64" height="64"></canvas>
-                    <div>description</div>
-                    <div>00 &deg; F</div>
+                    <div><%= data['daily']['data'][5]['summary'] %></div>
+                    <div><%= Math.round(data['daily']['data'][5]['temperatureHigh']) %> &deg; F</div>
                 </div>
                 <div class="day column">
                     <h3>Thursday</h3>
                     <hr>
                     <canvas id="icon1" width="64" height="64"></canvas>
-                    <div>description</div>
-                    <div>00 &deg; F</div>
+                    <div><%= data['daily']['data'][6]['summary'] %></div>
+                    <div><%= Math.round(data['daily']['data'][6]['temperatureHigh']) %> &deg; F</div>
                 </div>
                 <div class="day column">
                     <h3>Friday</h3>
                     <hr>
                     <canvas id="icon1" width="64" height="64"></canvas>
-                    <div>description</div>
-                    <div>00 &deg; F</div>
+                    <div><%= data['daily']['data'][7]['summary'] %></div>
+                    <div><%= Math.round(data['daily']['data'][7]['temperatureHigh']) %> &deg; F</div>
                 </div>
                 <div class="day column">
                     <h3>Saturday</h3>
                     <hr>
                     <canvas id="icon1" width="64" height="64"></canvas>
-                    <div>description</div>
-                    <div>00 &deg; F</div>
+                    <div><%= data['daily']['data'][1]['summary'] %></div>
+                    <div><%= Math.round(data['daily']['data'][1]['temperatureHigh']) %> &deg; F</div>
                 </div>
                 <div class="day column">
                     <h3>Sunday</h3>
                     <hr>
                     <canvas id="icon1" width="64" height="64"></canvas>
-                    <div>description</div>
-                    <div>00 &deg; F</div>
+                    <div><%= data['daily']['data'][2]['summary'] %></div>
+                    <div><%= Math.round(data['daily']['data'][2]['temperatureHigh']) %> &deg; F</div>
                 </div>
             </div>
         </section>
